@@ -1,15 +1,22 @@
 import React from "react";
+import poster from "../assets/portada.jpg"; 
+import "../InfoPeli.css"
 
-const infoPeli = () => {
+const InfoPeli = () => {
   return (
-    <div style={{ textAlign: "center", margin: "2rem" }}>
-      <h1>🎥 Las películas del año</h1>
-      <p>
+    <div className="info-container">
+      <h1 className="info-title">🎥 Mi Lista de Películas</h1>
+      <p className="info-description">
         Bienvenido a la aplicación de películas. Aquí podrás ver información,
         descubrir el reparto y añadir tus favoritas.
       </p>
+      <img
+        src={poster}
+        alt="Poster genérico"
+        className="info-poster"
+      />
     </div>
   );
 };
 
-export default infoPeli;
+export default InfoPeli;
